@@ -1,0 +1,14 @@
+<header-navigation back="{{true}}" text="消息" />
+<view class="message-index">
+  <view class="head-message-box">
+  <view class="head-message {{head_num == index ? 'on' :''}}"  wx:for="{{headSelect}}" wx:kye="index" data-select="{{index}}" data-num="{{item.newNum>99?'99+':item.newNum}}" bindtap="changeHead">  {{item.name}}</view>
+  </view>
+
+  <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}" data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
+    <view class="message-type">
+      {{item.type}}
+      <view class="message-date">{{item.date}}</view>
+    </view>
+    <view class="message-text">{{item.text}}</view>
+  </view>
+</view>

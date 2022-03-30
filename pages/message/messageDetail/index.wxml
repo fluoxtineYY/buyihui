@@ -1,0 +1,6 @@
+<header-navigation back="{{true}}" text="消息" />
+<view class="detail-index">
+  <view class="title">疫情紧张，平台祝愿您做好防护工作</view>
+  <view class="type">系统消息 <text>2021-05-11 15:12</text></view>
+  <view class="content">疫情防控信息日报机制，落实联防联控举措，每日对疫情防控情况进行汇总，上报三张表，即人员现状统计表、返程统计表、疫情报告单，并建立巡查督导机制，强化工作监督。</view>
+</view>

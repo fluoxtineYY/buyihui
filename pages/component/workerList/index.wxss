@@ -1,0 +1,134 @@
+.content-body-box {
+  padding: 0 20rpx 20rpx;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rpx;
+  padding: 30rpx;
+  max-height: 316rpx;
+  background: rgba(255, 255, 255, 0.39);
+  box-shadow: 0px 0px 12px rgba(164, 164, 164, 0.16);
+  border-radius: 20rpx;
+}
+
+.content-body+.content-body {
+  margin-top: 24rpx;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-line-left {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
+.job-name {
+  height: 50rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+  color: #414141;
+}
+
+.job-num {
+  display: flex;
+  align-items: center;
+  margin-left: 24rpx;
+  width: 120rpx;
+  height: 44rpx;
+  padding: 0 8rpx;
+  text-align: center;
+  color: #FFAD47;
+  font-size: 24rpx;
+  background: rgba(255, 242, 232, 0.39);
+  border-radius: 8rpx;
+}
+
+.job-num[data-feature='全职'] {
+  color: #13CBB9; 
+background: rgba(230, 249, 246, 1);
+}
+
+.first-line-right {
+  height: 32rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #5D77F8;
+  /* letter-spacing: 40rpx; */
+  opacity: 1;
+}
+
+.second-line {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.second-feature {
+  padding: 4rpx 12rpx;
+  height: 44rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #706C7F;
+  background: rgba(230, 230, 235, 0.39);
+  border-radius: 8rpx;
+}
+
+.second-feature+.second-feature {
+  margin-left: 20rpx;
+}
+
+.third-line {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.third-line image {
+  margin: 0 12rpx 0 0;
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 48rpx;
+}
+
+.third-middle {
+  flex: 1;
+  min-width: 0;
+  margin-top: 10rpx;
+  flex-direction: column;
+}
+
+.company {
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #414141;
+}
+
+.company-address {
+  margin-top: 12rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #414141;
+}
+
+.time {
+  display: flex;
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #B8B8B8;
+}

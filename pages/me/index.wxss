@@ -1,0 +1,142 @@
+.me-index {
+  position: relative;
+}
+
+.me-head {
+  position: relative;
+  width: 750rpx;
+  height: 356rpx;
+  background: rgba(63, 111, 237);
+}
+
+.head-img {
+  width: 100%;
+  height: 356rpx;
+  z-index: 999;
+}
+
+.head-content {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 356rpx;
+  z-index: 999;
+}
+
+.head-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 200rpx;
+  padding: 0 60rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.head-left image {
+  margin-right: 22rpx;
+  top: 40rpx;
+  width: 136rpx;
+  border-radius: 68rpx;
+}
+
+.head-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-first {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26rpx;
+}
+
+.head-name {
+  height: 50rpx;
+  font-size: 36rpx;
+}
+
+.head-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 22rpx;
+  min-width: 108rpx;
+  height: 44rpx;
+  font-size: 24rpx;
+  color: #13CBB9;
+  background: rgba(164, 255, 240);
+  border-radius: 8rpx;
+}
+
+.head-role text {
+  margin: 0 34rpx;
+}
+
+.content-bottom {
+  position:absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 694rpx;
+  padding: 0 30rpx;
+  max-height: 136rpx;
+  font-size: 28rpx;
+  color: #5482FB;
+  background: rgba(247, 248, 254);
+  border-radius: 20rpx 20rpx 0 0;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.head-good {
+  display: flex;
+  align-items: center;
+  padding:30rpx 30rpx 30rpx 0;
+  min-width: 56rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #5482FB;
+}
+
+
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20rpx;
+  padding:0 28rpx;
+  box-sizing: border-box;
+}
+
+.select-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex:1;
+  min-width: 0;
+  height: 118rpx;
+  border-bottom:4rpx solid #F7F8FE;
+}
+
+.select-left {
+  display: flex;
+  align-items: center;
+}
+
+.worker-icon {
+  margin-right: 40rpx;
+  width: 64rpx;
+}
+
+.more-img image {
+  width: 16rpx;
+  transform: rotateY(180deg);
+}

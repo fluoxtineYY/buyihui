@@ -1,0 +1,7 @@
+<header-navigation head_background="1" font_color="2" back="{{true}}" text="{{login_type==2?'找客户':'找加工'}}" />
+<view class="find-index">
+  <view class="body-img">
+    <image src="/pages/image/{{login_type==2?'find-customs':'find-addJob'}}.png" mode="widthFix"></image>
+    <view class="footer"><text>{{login_type==2?'登记信息':'登记加工需求'}}</text></view>
+  </view>
+</view>

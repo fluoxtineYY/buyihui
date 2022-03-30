@@ -1,0 +1,24 @@
+<view class="content-body-box">
+  <view class="content-body" wx:for="{{job_content}}" wx:key="index">
+    <view class="first-line">
+      <view class="first-line-left">
+        <view class="job-name">{{item.jobName}}</view>
+        <view class="job-num" data-feature="{{item.jobFeature}}">{{item.jobFeature}} | {{item.jobNumber}}人</view>
+      </view>
+      <view class="first-line-right">{{item.jobPrice}}/{{item.jobUnit}}</view>
+    </view>
+    <view class="second-line">
+      <view class="second-feature" wx:for="{{item.personArr}}" wx:key="index"> {{item.feature}}</view>
+    </view>
+    <view class="third-line" wx:for="{{item.jobMessage}}" wx:key="index">
+      <image src="{{item.picture}}"></image>
+      <view class="third-middle">
+        <view class="company">{{item.name}} | {{item.companyName}}</view>
+        <view class="company-address">
+          <view class="address">{{item.address}}</view>
+          <view class="time">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

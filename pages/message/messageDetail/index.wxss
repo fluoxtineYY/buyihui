@@ -1,0 +1,37 @@
+.detail-index {
+  padding: 30rpx 28rpx;
+}
+
+.title {
+  margin: 32rpx 0 24rpx 0;
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 40rpx;
+}
+
+.type {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #706C7F;
+}
+
+.type text {
+  margin-left: 30rpx;
+}
+
+.content {
+  display: flex;
+  padding-top: 40rpx;
+  /* width: 630rpx; */
+  min-height: 184rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  color: #706C7F;
+  border-top: 4rpx solid #F7F8FE;
+}

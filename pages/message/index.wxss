@@ -1,0 +1,111 @@
+.message-index {
+  padding: 0 28rpx;
+  background: rgba(247, 248, 254, 1);
+}
+
+.head-message-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.head-message {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 44rpx;
+  margin: 24rpx 0;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  color: #706C7F;
+}
+
+.head-message.on {
+  position: relative;
+  color: #5482FB;
+}
+
+.head-message.on::after {
+  position: absolute;
+  content: "";
+  top: 110%;
+  right:50%;
+  /* top:46rpx;
+  right: 40rpx; */
+  transform: translateX(50%);
+  /* bottom: -12rpx; */
+  width: 40rpx;
+  height: 0px;
+  border: 4rpx solid #5482FB;
+  border-radius: 4rpx;
+}
+
+.message-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  max-height: 182rpx;
+  margin-top: 50rpx;
+  padding: 26rpx 30rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 12rpx rgba(164, 164, 164, 0.16);
+  border-radius: 12rpx;
+}
+
+.message-body[data-num='0']::after,.head-message[data-num='0']::after {
+  display: none;
+}
+
+.message-body::after,.head-message::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-num);
+  top: -20rpx;
+  right:0;
+  min-width: 40rpx;
+height: 40rpx;
+font-size: 32rpx;
+color: #FFFFFF;
+background: rgba(248, 93, 98);
+border-radius: 20px;
+}
+
+.message-body[data-num='99+']::after,.head-message[data-num='99+']::after  {
+  padding:0 4rpx;
+}
+
+
+.message-body+.message-body {
+  margin-top: 24rpx;
+}
+
+.message-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+  color: #414141;
+}
+
+.message-date {
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #B8B8B8;
+  font-weight: 400;
+}
+
+.message-text {
+  margin-top: 24rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #706C7F;
+
+}

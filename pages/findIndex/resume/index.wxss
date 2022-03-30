@@ -1,0 +1,152 @@
+.resume-index {
+  padding: 0 28rpx;
+}
+
+.base-message,
+.work-message {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 120rpx;
+  border-bottom: 4rpx solid #F7F8FE;
+}
+
+.base-message:nth-child(7) {
+  border-top: 4rpx solid #F7F8FE;
+}
+
+
+.work-message {
+  border-top: 4rpx solid #F7F8FE;
+  border-bottom: 0;
+}
+
+.base-left {
+  display: flex;
+  width: 150rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #414141;
+}
+
+.base-left image {
+  width: 16rpx;
+}
+
+.picker-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex:1;
+  min-width: 0;
+  margin-left: 20rpx;
+}
+
+.picker-style picker{
+  width: 100%;
+}
+
+.more-select{
+  width: 16rpx;
+  transform: rotateY(180deg);
+}
+
+.input-style {
+  height: 34rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #B8B8B8;
+}
+
+.send-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 148rpx;
+  height: 56rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  background: rgba(84, 130, 251);
+  border-radius: 8rpx;
+}
+
+.select-work-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26rpx;
+  min-width: 96rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  color: #706C7F;
+  background: rgba(247, 247, 249, 0.9);
+  border-radius: 8rpx;
+}
+
+.select-list+.select-list {
+  margin-left: 38rpx;
+}
+
+.select-list+.select-list:nth-child(5n+1) {
+  margin-left: 0;
+}
+
+.select-list.on {
+  font-size: 24rpx;
+color: #FFFFFF;
+background: rgba(84, 130, 251, 0.39);
+}
+
+.sure-select {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 66rpx 0 26rpx;
+font-size: 28rpx;
+color: #5482FB;
+}
+
+.sure-select image {
+  width: 40rpx;
+}
+
+.sure-select text {
+  margin:0 6rpx 0 24rpx;
+font-size: 28rpx;
+color: #414141;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  margin:40rpx 0 20rpx 0;
+  width: 750rpx;
+  height: 120rpx;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:20rpx 0;
+  width: 630rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  background: rgba(84, 130, 251);
+  border-radius: 12rpx;
+
+
+}
+
+/* 重新开始 */

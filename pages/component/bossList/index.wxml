@@ -1,0 +1,23 @@
+<view class="content-body-box">
+  <view class="base-body" wx:for="{{person_content}}" wx:key="index">
+    <view class="left-img">
+      <image src="{{item.imagePath}}" mode="widthFix"></image>
+      <view class="middle-message">
+        <view class="base-name">
+          {{item.name}}
+          <image src="/pages/image/icon-{{item.sex=='男'?'boy':'girl'}}.png" mode="widthFix"></image>
+        </view>
+        <view class="good-box">
+          <view class="job-good" wx:for="{{item.good}}" wx:key="index">{{item}}</view>
+        </view>
+        <view class="job-address">{{item.address}}</view>
+      </view>
+    </view>
+    <view class="right-massage">
+      <view class="base-wages">
+        {{item.wages}}
+      </view>
+      <view class="base-status" data-status="{{item.status}}">{{item.status}}</view>
+    </view>
+  </view>
+</view>

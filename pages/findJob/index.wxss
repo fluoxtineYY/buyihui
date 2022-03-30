@@ -1,0 +1,245 @@
+@import'/pages/component/workerList/index.wxss';
+@import'/pages/component/bossList/index.wxss';
+
+.job-index {
+  background: rgba(248, 249, 255, 0.39);
+}
+
+.head-background {
+  position: relative;
+  width: 750rpx;
+  height: 490rpx;
+  background: rgba(63, 111, 237, 1);
+}
+
+.search-company-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 180rpx;
+  padding: 0 28rpx;
+}
+
+.search-company {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 640rpx;
+  top: 180rpx;
+  padding: 0 28rpx;
+  height: 80rpx;
+  background: rgba(244, 244, 244);
+  border-radius: 40rpx;
+  z-index: 999;
+}
+
+.search-company image {
+  margin-right: 16rpx;
+  width: 40rpx;
+}
+
+.input-style {
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #C3CBE5;
+}
+
+
+.check-more {
+  position: absolute;
+  display: flex;
+  width: 96%;
+  top: 300rpx;
+  padding: 0 62rpx;
+}
+
+.check-name {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+
+
+.check-name image {
+  margin-left: 10rpx;
+  width: 24rpx;
+}
+
+
+
+.content-head-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 376rpx;
+  width: 100%;
+  padding: 0 28rpx;
+}
+
+.content-head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #f79f65;
+}
+
+.content-head::before,
+.content-head::after {
+  position: absolute;
+  content: "";
+  right: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rpx;
+  height: 0rpx;
+  border: 2rpx solid #f79f65;
+}
+
+.content-head::after {
+  left: 110%;
+}
+
+.content-body-box {
+  position: absolute;
+  top: 440rpx;
+  padding: 0 28rpx;
+  min-width: 694rpx;
+}
+
+.content-body,.base-body  {
+  background: rgba(255, 255, 255);
+}
+
+.base-body {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 266rpx;
+  padding: 0 32rpx;
+  background: rgba(255, 255, 255);
+  box-shadow: 0px 0px 12px rgba(164, 164, 164, 0.16);
+  border-radius: 12rpx; */
+}
+
+/* .base-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 266rpx;
+  padding: 0 32rpx;
+  background: rgba(255, 255, 255);
+  box-shadow: 0px 0px 12px rgba(164, 164, 164, 0.16);
+  border-radius: 12rpx;
+}
+
+.base-body+.base-body {
+  margin-top: 24rpx;
+}
+
+.left-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-img image {
+  margin-right: 30rpx;
+  width: 96rpx;
+  border-radius: 48rpx;
+}
+
+.middle-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.base-name {
+  height: 50rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+  color: #414141;
+}
+
+.base-name image {
+  margin-left: 16rpx;
+  width: 32rpx;
+}
+
+.good-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.job-good {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24rpx 0;
+  min-width: 74rpx;
+  height: 44rpx;
+  font-size: 24rpx;
+  color: #706C7F;
+  background: rgba(247, 247, 249);
+  border-radius: 8rpx;
+}
+
+.job-good+.job-good {
+  margin-left: 20rpx;
+}
+
+.job-address {
+  height: 34rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 34rpx;
+  color: #B8B8B8;
+}
+
+.right-massage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+  height: 180rpx;
+
+}
+
+.base-wages {
+  height: 40rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #5D77F8;
+}
+
+.base-status[data-status='邀约'],
+.base-status[data-status='工作中'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 148rpx;
+  height: 56rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  background: rgba(84, 130, 251);
+  border-radius: 8rpx;
+}
+
+.base-status[data-status='工作中'] {
+  background: rgba(245, 245, 245);
+  color: #706C7F;
+} */

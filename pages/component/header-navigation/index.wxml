@@ -1,0 +1,14 @@
+<!-- <view class="navbar" style="height:{{navigationBarHeight}}"> -->
+<view class="navbar color{{head_background}}" style="padding-top:{{statusBarHeight}}">
+  <view class="title-bar">
+    <view class="bar-address" wx:if="{{address}}">
+      <image src="/pages/image/bar-address.png" mode="widthFix"></image>广州
+    </view>
+    <navigator open-type="navigateBack" delta="1" class="bar-back" wx:if="{{back}}">
+      <image src="/pages/image/bar-back.png" mode="widthFix"></image>
+    </navigator>
+    <view class="tar-title font-color{{font_color}}">{{text}}</view>
+  </view>
+</view>
+<!-- </view> -->
+<view style="height:{{navigationBarHeight}}"></view>

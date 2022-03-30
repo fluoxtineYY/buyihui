@@ -1,0 +1,12 @@
+<header-navigation/>
+<view class="select-role">
+  <view class="role-header">
+    <image src="/pages/image/index-header.png" mode="widthFix"></image>
+  </view>
+  <view class="role-content">
+    <view class="many-role" wx:for="{{role_arr}}" wx:key="index" bindtap="jumpIndex" data-index="{{index}}" >
+      <image src="{{item.icon}}" mode="widthFix"></image>
+      <view class="role-name">{{item.name}}</view>
+    </view>
+  </view>
+</view>

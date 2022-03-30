@@ -1,0 +1,54 @@
+<header-navigation head_background="2" font_color="1" address="{{true}}" text="布衣汇招聘" />
+<view class="find-index">
+  <view class="index-head">
+    <image src="/pages/image/findIndex-head.png" mode="widthFix"></image>
+  </view>
+
+  <view class="index-nav-box">
+    <view class="index-nav" wx:for="{{nav_arr}}" wx:key="index">
+      <image src="{{item.icon}}" mode="widthFix"></image>
+      <view class="nav-name">{{item.name}}</view>
+    </view>
+  </view>
+
+  <view class="index-message-box">
+    <view class="index-message">
+      <image class="message-img" src="/pages/image/findIndex-message.png" mode="widthFix"></image>
+      <view class="message-conduct">六月最新一波岗位上线啦！派出所巡逻岗位缺人...</view>
+      <image class="more-img" src="/pages/image/bar-back.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="content-head">本日新增{{job_num}}个招聘岗位</view>
+
+  <include src="/pages/component/workerList/index.wxml"></include>
+  <!-- <view class="content-body-box">
+    <view class="content-body" wx:for="{{job_content}}" wx:key="index">
+      <view class="first-line">
+        <view class="first-line-left">
+          <view class="job-name">{{item.jobName}}</view>
+          <view class="job-num" data-feature="{{item.jobFeature}}">{{item.jobFeature}} | {{item.jobNumber}}人</view>
+        </view>
+        <view class="first-line-right">{{item.jobPrice}}/{{item.jobUnit}}</view>
+      </view>
+      <view class="second-line">
+        <view class="second-feature" wx:for="{{item.personArr}}" wx:key="index"> {{item.feature}}</view>
+      </view>
+      <view class="third-line" wx:for="{{item.jobMessage}}" wx:key="index">
+        <image src="{{item.picture}}"></image>
+        <view class="third-middle">
+          <view class="company">{{item.name}} | {{item.companyName}}</view>
+          <view class="company-address">
+            <view class="address">{{item.address}}</view>
+            <view class="time">{{item.time}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+
+  <view class="resume" bindtap="jumpResume">
+    <text>创建</text>
+    <text>简历</text>
+  </view>
+</view>

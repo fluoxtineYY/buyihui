@@ -1,0 +1,76 @@
+<header-navigation head_background="2" font_color="1" text="我的" />
+<view class="me-index">
+  <view class="me-head">
+    <image class="head-img" src="/pages/image/me-head.png" mode="widthFix"></image>
+  </view>
+
+  <block wx:if="{{login_type==0}}">
+    <view class="head-content" wx:for="{{headMessage}}" wx:key="index">
+      <view class="head-top">
+        <view class="head-left">
+          <image src="{{item.headImg}}" mode="widthFix"></image>
+        </view>
+        <view class="head-right">
+          <view class="right-first">
+            <view class="head-name">{{item.name}}
+            </view>
+            <view class="head-status" data-status="{{item.status}}">{{item.status}}</view>
+          </view>
+          <view class="head-role">{{item.role}} <text>|</text> {{item.experise}}</view>
+        </view>
+      </view>
+      <view class="content-bottom">
+        擅长：
+        <view class="head-good" wx:for="{{item.good}}" wx:key="index">{{item}}</view>
+      </view>
+    </view>
+    <view class="body-content">
+      <view wx:for="{{meSelect}}" wx:key="index">
+        <navigator url="{{item.path}}" class="select-content">
+          <view class="select-left">
+            <image class="worker-icon" src="{{item.icon}}" mode="widthFix"></image>
+            <view class="check-content">{{item.content}}</view>
+          </view>
+          <view class="more-img">
+            <image src="/pages/image/bar-back.png" mode="widthFix"></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="head-content" wx:for="{{BossMessage}}" wx:key="index">
+      <view class="head-top">
+        <view class="head-left">
+          <image src="{{item.headImg}}" mode="widthFix"></image>
+        </view>
+        <view class="head-right">
+          <view class="right-first">
+            <view class="head-name">{{item.name}}
+            </view>
+            <view class="head-status" data-status="{{item.status}}">{{item.status}}</view>
+          </view>
+          <view class="head-role">{{item.role}} <text>|</text> {{item.experise}}</view>
+        </view>
+      </view>
+      <view class="content-bottom">
+        <view class="head-good">{{item.good}}</view>
+      </view>
+    </view>
+    <view class="body-content">
+      <view wx:for="{{BossSelect}}" wx:key="index">
+        <navigator url="{{item.path}}" class="select-content">
+
+          <view class="select-left">
+            <image class="worker-icon" src="{{item.icon}}" mode="widthFix"></image>
+            <view class="check-content">{{item.content}}</view>
+          </view>
+          <view class="more-img">
+            <image src="/pages/image/bar-back.png" mode="widthFix"></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+</view>

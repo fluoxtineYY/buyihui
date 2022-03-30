@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/findJob/index",
+    "pages/findIndex/index",
+    "pages/message/index",
+    "pages/me/index",
+    "pages/findIndex/resume/index",
+    "pages/message/messageDetail/index",
+    "pages/findIndex/findCustom/index",
+    "pages/me/feedBack/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "布衣汇",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#BBBBBB",
+    "selectedColor": "#5D77F8",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/findIndex/index",
+        "iconPath": "/pages/image/tar-index.png",
+        "selectedIconPath": "/pages/image/tar-index_on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/findJob/index",
+        "iconPath": "/pages/image/tar-findjob.png",
+        "selectedIconPath": "/pages/image/tar-findjob_on.png",
+        "text": "求职"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "iconPath": "/pages/image/tar-message.png",
+        "selectedIconPath": "/pages/image/tar-message_on.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "/pages/image/tar-me.png",
+        "selectedIconPath": "pages/image/tar-me_on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}

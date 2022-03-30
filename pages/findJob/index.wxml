@@ -1,0 +1,40 @@
+<header-navigation head_background="2" font_color="1" address="{{true}}" text="布衣汇求职" />
+<view class="job-index">
+  <view class="head-background">
+  </view>
+  <view class="search-company-box">
+    <view class="search-company">
+      <image src="/pages/image/icon-search.png" mode="widthFix"></image>
+      <input type="text" placeholder="搜索公司/职位" placeholder-style="input-style" :value="{{searchName}}" />
+    </view>
+  </view>
+
+  <view class="check-more">
+    <block wx:if="{{login_type=='0'}}">
+      <view class="check-name" wx:for="{{checkDetail}}" wx:key="index">
+        {{item.name}}
+        <image src="/pages/image/icon-right.png" mode="widthFix"></image>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="check-name" wx:for="{{checkPersonDetail}}" wx:key="index">
+        {{item.name}}
+        <image src="/pages/image/icon-right.png" mode="widthFix"></image>
+      </view>
+    </block>
+  </view>
+
+  <view class="content-head-box">
+    <view class="content-head">本日新增{{job_num}}个招聘岗位</view>
+  </view>
+
+
+  <block wx:if="{{login_type==0}}">
+    <include src="/pages/component/workerList/index.wxml"></include>
+  </block>
+
+  <block wx:else>
+    <include src="/pages/component/bossList/index.wxml"></include>
+  </block>
+
+</view>

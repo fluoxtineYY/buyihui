@@ -1,0 +1,24 @@
+.body-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 184rpx auto 0;
+}
+
+.body-img image {
+  width: 536rpx;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 164rpx;
+  width: 508rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  background: rgba(84, 130, 251, 1);
+  border-radius: 12rpx;
+}
