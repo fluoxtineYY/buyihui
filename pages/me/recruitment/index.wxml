@@ -1,0 +1,63 @@
+<header-navigation head_background="1" font_color="2" back="{{true}}" text="{{login_type==0?'应聘记录':'招聘职位管理'}}" />
+
+<view class="recruitment-index">
+  <block wx:if="{{login_type==0}}">
+  <!-- <include src="/pages/component/head-select/index.wxml"></include> -->
+    <view class="head-select">
+      <view bindtap="changeSelectWorker" data-index="{{index}}" class="select-message {{selectNum==index ? 'on' :''}}"
+        wx:for="{{workerSelect}}" wx:key="index">
+        {{item.name}}</view>
+    </view>
+    <view class="content-body-box">
+      <view class="content-body" wx:for="{{workerRecord}}" wx:key="index">
+        <view class="first-line">
+          <view class="first-line-left">
+            <view class="job-name">{{item.jobName}}</view>
+            <view class="job-num" data-feature="{{item.jobFeature}}">{{item.jobFeature}} | {{item.jobNumber}}人</view>
+          </view>
+          <view class="first-line-right" data-feature="{{item.jobStatus}}">{{item.jobStatus}}</view>
+        </view>
+        <view class="third-line">
+          <view class="company">{{item.personName}} | {{item.companyName}}</view>
+          <view class="time">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="head-select">
+      <view bindtap="changeSelect"class="select-message {{companyNum==index ? 'on' :''}}"
+        wx:for="{{companySelect}}" wx:key="index"  data-index="{{index}}">
+        {{item.name}}</view>
+    </view>
+    <view class="content-body-box">
+      <view class="content-body" wx:for="{{companyRecord}}" wx:key="index">
+        <view class="first-line">
+          <view class="first-line-left">
+            <view class="job-name">{{item.jobName}}</view>
+            <view class="job-num" data-feature="{{item.jobFeature}}">{{item.jobFeature}} | {{item.jobNumber}}人</view>
+          </view>
+          <view class="first-line-right">{{item.jobPrice}}/{{item.jobUnit}}</view>
+        </view>
+        <view class="second-line">
+          <view class="second-feature" wx:for="{{item.personArr}}" wx:key="index"> {{item.feature}}</view>
+        </view>
+        <view class="last-line">
+          <view class="invite">
+            <image class="invite-img" src="/pages/image/me-icon-invite.png" mode="widthFix"></image>
+            <view class="times-style">邀约:{{item.inviteTimes}}次</view>
+          </view>
+          <view class="invite">
+            <image class="read-img" src="/pages/image/me-icon-read.png" mode="widthFix"></image>
+            <view class="times-style">浏览:{{item.readTimes}}次</view>
+          </view>
+          <view class="last-right">
+            <view class="delete">下架</view>
+            <view class="edit">编辑</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

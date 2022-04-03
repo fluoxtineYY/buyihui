@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "header-navigation":"/pages/component/header-navigation/index"
+  }
+}

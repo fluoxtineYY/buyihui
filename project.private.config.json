@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/findIndex/resume/index",
-          "pathName": "pages/findIndex/resume/index",
+          "name": "pages/me/applicant/index",
+          "pathName": "pages/me/applicant/index",
           "query": "",
           "scene": null
         }

@@ -1,0 +1,103 @@
+@import'/pages/component/workerList/index.wxss';
+
+.recruitment-index {
+  padding: 0 28rpx;
+}
+
+.head-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rpx 32rpx
+}
+
+.select-message {
+  display: flex;
+  align-items: center;
+  height: 44rpx;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  color: #706C7F;
+}
+
+.select-message.on {
+  position: relative;
+  font-size: 34rpx;
+  color: #5482FB;
+}
+
+.select-message.on::after {
+  position: absolute;
+  content: '';
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rpx;
+  height: 0px;
+  border: 4rpx solid #5482FB;
+  border-radius: 4rpx;
+}
+
+.content-body-box {
+  margin-top: 46rpx;
+}
+
+.first-line-right[data-feature='邀约中'] {
+  color: #FFAD47;
+}
+
+.third-line {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  justify-content: space-between;
+}
+
+.last-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40rpx;
+  height: 40rpx;
+  padding:0;
+}
+
+.invite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invite-img,.read-img{
+  margin-right: 8rpx;
+  width: 32rpx;
+}
+
+.times-style {
+height: 34rpx;
+font-size: 24rpx;
+font-weight: 500;
+line-height: 34rpx;
+color: #706C7F;
+}
+
+.last-right {
+  display: flex;
+}
+
+.delete,.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100rpx;
+height: 52rpx;
+font-size: 24rpx;
+color: #FFFFFF;
+background: rgba(248, 93, 98);
+border-radius: 8rpx;
+}
+
+.edit {
+  margin-left: 18rpx;
+background: rgba(93, 119, 248);
+}

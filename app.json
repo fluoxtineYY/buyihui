@@ -8,7 +8,9 @@
     "pages/findIndex/resume/index",
     "pages/message/messageDetail/index",
     "pages/findIndex/findCustom/index",
-    "pages/me/feedBack/index"
+    "pages/me/feedBack/index",
+    "pages/me/recruitment/index",
+    "pages/me/applicant/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

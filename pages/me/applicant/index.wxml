@@ -1,0 +1,10 @@
+<header-navigation head_background="1" font_color="2" back="{{true}}" text="应聘者管理" />
+<view class="applicant-inedex">
+  <!-- <include src="/pages/component/head-select/index.wxml"></include> -->
+  <view class="head-select">
+    <view bindtap="changeSelectWorker" data-index="{{index}}" class="select-message {{selectNum==index ? 'on' :''}}"
+      wx:for="{{workerSelect}}" wx:key="index">
+      {{item.name}}</view>
+  </view>
+  <include src="/pages/component/bossList/index.wxml"></include>
+</view>

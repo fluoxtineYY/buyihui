@@ -24,11 +24,11 @@ Page({
     {
       icon:'/pages/image/me-icon-work-2.png',
       content:'应聘记录',
-      path:''
+      path:'/pages/me/recruitment/index'
     },{
       icon:'/pages/image/me-icon-work-3.png',
       content:'意见反馈',
-      path:''
+      path:'/pages/me/feedBack/index'
     }],
     BossMessage:[
       {
@@ -43,16 +43,16 @@ Page({
     BossSelect:[{
       icon:'/pages/image/me-icon-boss-1.png',
       content:'招聘职位管理',
-      path:''
+      path:'/pages/me/recruitment/index'
     },
     {
       icon:'/pages/image/me-icon-boss-2.png',
       content:'应聘者管理',
-      path:''
+      path:'/pages/me/applicant/index'
     },{
       icon:'/pages/image/me-icon-work-3.png',
       content:'意见反馈',
-      path:''
+      path:'/pages/me/feedBack/index'
     }],
   },
 
