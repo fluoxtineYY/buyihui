@@ -98,7 +98,9 @@ Page({
             address: "海珠鹭江",
             time: "20分钟前"
           }],
-          login_type:Number
+          login_type:Number,
+          isPrice:true,
+          isTime:true
         }]
 
       },

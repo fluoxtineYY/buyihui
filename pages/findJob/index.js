@@ -126,6 +126,8 @@ Page({
       }
     ],
     login_type:Number,
+    isPrice:true,
+    isTime:true
   },
 
   /**

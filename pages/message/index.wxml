@@ -7,7 +7,7 @@
 
   <block wx:if="{{login_type==0}}">
     <block wx:if="{{headSelect[head_num].value==0}}">
-      <view>das</view>
+      <include src="/pages/component/workerList/index.wxml"></include>
     </block>
 
     <block wx:elif="{{headSelect[head_num].value==1}}">
@@ -45,6 +45,4 @@
       </view>
     </block>
   </block>
-
-
 </view>

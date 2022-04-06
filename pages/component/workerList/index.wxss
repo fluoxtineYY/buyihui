@@ -36,6 +36,15 @@
   color: #414141;
 }
 
+.view-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32rpx;
+  font-size: 24rpx;
+  color: #706C7F;
+}
+
 .job-num {
   display: flex;
   align-items: center;
@@ -51,8 +60,8 @@
 }
 
 .job-num[data-feature='全职'] {
-  color: #13CBB9; 
-background: rgba(230, 249, 246, 1);
+  color: #13CBB9;
+  background: rgba(230, 249, 246, 1);
 }
 
 .first-line-right {
@@ -103,6 +112,25 @@ background: rgba(230, 249, 246, 1);
   min-width: 0;
   margin-top: 10rpx;
   flex-direction: column;
+}
+
+.third-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 148rpx;
+  height: 56rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  text-align: center;
+  background: rgba(84, 130, 251);
+  border-radius: 8rpx;
 }
 
 .company {

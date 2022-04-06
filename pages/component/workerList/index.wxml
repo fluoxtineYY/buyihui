@@ -3,9 +3,14 @@
     <view class="first-line">
       <view class="first-line-left">
         <view class="job-name">{{item.jobName}}</view>
-        <view class="job-num" data-feature="{{item.jobFeature}}">{{item.jobFeature}} | {{item.jobNumber}}人</view>
+        <block wx:if="{{isMessage}}">
+          <view class="view-time">面试时间:{{item.jobTime}}</view>
+        </block>
+        <block wx:else>
+          <view class="job-num" data-feature="{{item.jobFeature}}">{{item.jobFeature}} | {{item.jobNumber}}人</view>
+        </block>
       </view>
-      <view class="first-line-right">{{item.jobPrice}}/{{item.jobUnit}}</view>
+      <view wx:if="{{isPrice}}" class="first-line-right">{{item.jobPrice}}/{{item.jobUnit}}</view>
     </view>
     <view class="second-line">
       <view class="second-feature" wx:for="{{item.personArr}}" wx:key="index"> {{item.feature}}</view>
@@ -16,9 +21,10 @@
         <view class="company">{{item.name}} | {{item.companyName}}</view>
         <view class="company-address">
           <view class="address">{{item.address}}</view>
-          <view class="time">{{item.time}}</view>
+          <view wx:if="{{isTime}}" class="time">{{item.time}}</view>
         </view>
       </view>
+      <view wx:if="{{isSure}}" class="third-left"><view class="left-box">确认</view></view>
     </view>
   </view>
 </view>

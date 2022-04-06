@@ -1,3 +1,5 @@
+@import'/pages/component/workerList/index.wxss';
+
 .message-index {
   padding: 0 28rpx;
   background: rgba(247, 248, 254, 1);
@@ -77,8 +79,8 @@
 
 .head-message::before {
   top: 0;
- right: -50%;
- transform: translate(-50%,-50%);
+  right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .message-body[data-num='99+']::after,
