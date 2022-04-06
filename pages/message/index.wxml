@@ -1,14 +1,50 @@
 <header-navigation back="{{true}}" text="消息" />
 <view class="message-index">
   <view class="head-message-box">
-  <view class="head-message {{head_num == index ? 'on' :''}}"  wx:for="{{headSelect}}" wx:kye="index" data-select="{{index}}" data-num="{{item.newNum>99?'99+':item.newNum}}" bindtap="changeHead">  {{item.name}}</view>
+    <view class="head-message {{head_num == index ? 'on' :''}}" wx:for="{{headSelect}}" wx:kye="index"
+      data-select="{{index}}" data-num="{{item.newNum>99?'99+':item.newNum}}" bindtap="changeHead"> {{item.name}}</view>
   </view>
 
-  <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}" data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
-    <view class="message-type">
-      {{item.type}}
-      <view class="message-date">{{item.date}}</view>
-    </view>
-    <view class="message-text">{{item.text}}</view>
-  </view>
+  <block wx:if="{{login_type==0}}">
+    <block wx:if="{{headSelect[head_num].value==0}}">
+      <view>das</view>
+    </block>
+
+    <block wx:elif="{{headSelect[head_num].value==1}}">
+      <view>asd</view>
+    </block>
+
+    <block wx:else>
+      <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}"
+        data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
+        <view class="message-type">
+          {{item.type}}
+          <view class="message-date">{{item.date}}</view>
+        </view>
+        <view class="message-text">{{item.text}}</view>
+      </view>
+    </block>
+  </block>
+
+  <block wx:elif="{{login_type==1}}">
+    <block wx:if="{{headSelect[head_num].value==0}}">
+      <view>das</view>
+    </block>
+
+    <block wx:elif="{{headSelect[head_num].value==1}}">
+      <view>asd</view>
+    </block>
+    <block wx:else>
+      <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}"
+        data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
+        <view class="message-type">
+          {{item.type}}
+          <view class="message-date">{{item.date}}</view>
+        </view>
+        <view class="message-text">{{item.text}}</view>
+      </view>
+    </block>
+  </block>
+
+
 </view>

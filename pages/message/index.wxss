@@ -28,7 +28,7 @@
   position: absolute;
   content: "";
   top: 110%;
-  right:50%;
+  right: 50%;
   /* top:46rpx;
   right: 40rpx; */
   transform: translateX(50%);
@@ -53,28 +53,37 @@
   border-radius: 12rpx;
 }
 
-.message-body[data-num='0']::after,.head-message[data-num='0']::after {
+.message-body[data-num='0']::after,
+.head-message[data-num='0']::before {
   display: none;
 }
 
-.message-body::after,.head-message::after {
+.message-body::after,
+.head-message::before {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   content: attr(data-num);
   top: -20rpx;
-  right:0;
+  right: 0;
   min-width: 40rpx;
-height: 40rpx;
-font-size: 32rpx;
-color: #FFFFFF;
-background: rgba(248, 93, 98);
-border-radius: 20px;
+  height: 40rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  background: rgba(248, 93, 98);
+  border-radius: 20px;
 }
 
-.message-body[data-num='99+']::after,.head-message[data-num='99+']::after  {
-  padding:0 4rpx;
+.head-message::before {
+  top: 0;
+ right: -50%;
+ transform: translate(-50%,-50%);
+}
+
+.message-body[data-num='99+']::after,
+.head-message[data-num='99+']::before {
+  padding: 0 4rpx;
 }
 
 

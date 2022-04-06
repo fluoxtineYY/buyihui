@@ -10,7 +10,8 @@
     "pages/findIndex/findCustom/index",
     "pages/me/feedBack/index",
     "pages/me/recruitment/index",
-    "pages/me/applicant/index"
+    "pages/me/applicant/index",
+    "pages/findJob/companyEnter/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

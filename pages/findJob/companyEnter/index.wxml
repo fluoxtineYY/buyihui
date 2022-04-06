@@ -1,0 +1,100 @@
+<header-navigation back="{{true}}" text="企业入驻" />
+
+<view class="resume-index">
+
+  <view class="base-message">
+    <view class="base-left">企业名称
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
+    </view>
+    <view class="picker-style">
+      <input placeholder="{{tagTips.name}}" placeholder-class="input-style" value="{{formList.name}}" />
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">企业类型
+    </view>
+    <view class="picker-style">
+      <picker bindchange="changeType" value="{{formSelect.typeNum}}" range="{{formSelect.typeArray}}">
+        <view class="input-style">{{formSelect.typeNum?formSelect.typeArray[formSelect.typeNum]:tagTips.type}}
+        </view>
+      </picker>
+      <image class="more-select" src="/pages/image/bar-back.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">企业规模
+    </view>
+    <view class="picker-style">
+      <picker bindchange="changeScale" value="{{formSelect.scaleNum}}" range="{{formSelect.scaleArray}}">
+        <view class="input-style">{{formSelect.scaleNum?formSelect.scaleArray[formSelect.scaleNum]:tagTips.scale}}
+        </view>
+      </picker>
+      <image class="more-select" src="/pages/image/bar-back.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">联系人
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
+    </view>
+    <view class="picker-style">
+      <input placeholder="{{tagTips.connect}}" placeholder-class="input-style" value="{{formList.phone}}" />
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">手机号码
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
+    </view>
+    <view class="picker-style">
+      <input placeholder="{{tagTips.phone}}" placeholder-class="input-style" value="{{formList.phone}}" />
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">验证码
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
+    </view>
+    <view class="picker-style">
+      <input placeholder="{{tagTips.code}}" placeholder-class="input-style" value="{{formList.code}}" />
+      <view class="send-code">发送</view>
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">所在区域
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
+    </view>
+    <view class="picker-style">
+      <picker bindchange="changeRegion" value="{{formSelect.regionNum}}" range="{{formSelect.regionArray}}">
+        <view class="input-style">{{formSelect.regionNum?formSelect.regionArray[formSelect.regionNum]:tagTips.region}}
+        </view>
+      </picker>
+      <image class="more-select" src="/pages/image/bar-back.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="base-message">
+    <view class="base-left">
+      详细地址
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
+    </view>
+    <view class="picker-style">
+      <input placeholder="{{tagTips.detailRegion}}" placeholder-class="input-style" value="{{formList.phone}}" />
+    </view>
+  </view>
+</view>
+
+<view class="fix-box">
+  <view class="sure-select">
+    <image src="/pages/image/icon-sureSelect.png" mode="widthFix"></image>
+    <text>请勾选</text>
+    《用户注册协议》
+  </view>
+
+  <view class="footer-box">
+    <view class="footer" bindtap="sureServe">确认保存</view>
+  </view>
+</view>
