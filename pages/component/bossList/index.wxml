@@ -1,23 +1,45 @@
 <view class="content-body-box">
-  <view class="base-body" wx:for="{{person_content}}" wx:key="index">
-    <view class="left-img">
-      <image src="{{item.imagePath}}" mode="widthFix"></image>
-      <view class="middle-message">
-        <view class="base-name">
-          {{item.name}}
-          <image src="/pages/image/icon-{{item.sex=='男'?'boy':'girl'}}.png" mode="widthFix"></image>
+  <block wx:if="{{isbossList}}">
+    <view class="base-body" wx:for="{{person_content}}" wx:key="index">
+      <view class="left-img">
+        <image src="{{item.imagePath}}" mode="widthFix"></image>
+        <view class="middle-message">
+          <view class="base-name">
+            {{item.name}}
+            <image src="/pages/image/icon-{{item.sex=='男'?'boy':'girl'}}.png" mode="widthFix"></image>
+          </view>
+          <view class="good-box">
+            <view class="job-good" wx:for="{{item.good}}" wx:key="index">{{item}}</view>
+          </view>
+          <view class="job-address">{{item.address}}</view>
         </view>
-        <view class="good-box">
-          <view class="job-good" wx:for="{{item.good}}" wx:key="index">{{item}}</view>
+      </view>
+      <view class="right-massage">
+        <view class="base-wages">
+          {{item.wages}}
         </view>
-        <view class="job-address">{{item.address}}</view>
+        <view class="base-status" data-status="{{item.status}}">{{item.status}}</view>
       </view>
     </view>
-    <view class="right-massage">
-      <view class="base-wages">
-        {{item.wages}}
+  </block>
+  <block wx:else>
+    <view class="base-body" wx:for="{{interview_content}}" wx:key="index">
+      <view class="left-img">
+        <image src="{{item.imagePath}}" mode="widthFix"></image>
+        <view class="middle-message">
+          <view class="base-name">
+            {{item.name}}
+            <image src="/pages/image/icon-{{item.sex=='男'?'boy':'girl'}}.png" mode="widthFix"></image>
+          </view>
+          <view class="good-box">
+            <view class="job-good" wx:for="{{item.good}}" wx:key="index">{{item}}</view>
+          </view>
+        </view>
       </view>
-      <view class="base-status" data-status="{{item.status}}">{{item.status}}</view>
+      <view class="right-massage message">
+        <view class="interview-status" data-status="{{item.status}}">{{item.status}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
     </view>
-  </view>
+  </block>
 </view>

@@ -4,6 +4,7 @@ Page({
        * 页面的初始数据
        */
       data: {
+        isbossList:false,
         isSure:true,
         isMessage: true,
         headSelect: [{
@@ -32,7 +33,7 @@ Page({
             num: 567
           }
         ],
-        head_num: 2,
+        head_num:0,
         login_type: Number,
         job_content: [{
           jobName: "平车",
@@ -118,7 +119,27 @@ Page({
             address: "海珠鹭江",
             time: "20分钟前"
           }],
-        }]
+        }],
+        interview_content:[
+          {
+            imagePath:'https://img1.baidu.com/it/u=4229212883,631981417&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500',
+            name:'陈建华',
+            sex:'男',
+            good:["平车","四线","裁床","尾部"],
+            status:'尚未联系',
+            time:'1小时前'
+          },
+          {
+            imagePath:'https://img1.baidu.com/it/u=3678285880,705067650&fm=253&fmt=auto&app=138&f=JPEG?w=360&h=360',
+            name:'梁衣',
+            sex:'女',
+            good:["平车","四线","裁床","尾部"],
+            address:'海珠鹭江',
+            wages:"15k-20k",
+            status:'已邀请',
+            time:'1小时前'
+          }
+        ]
       },
         /**
          * 生命周期函数--监听页面加载

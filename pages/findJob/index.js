@@ -127,7 +127,8 @@ Page({
     ],
     login_type:Number,
     isPrice:true,
-    isTime:true
+    isTime:true,
+    isbossList:true
   },
 
   /**

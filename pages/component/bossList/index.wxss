@@ -21,6 +21,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 200rpx;
 }
 
 .left-img image {
@@ -33,6 +34,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 150rpx;
+  
 }
 
 .base-name {
@@ -86,7 +89,12 @@
   align-items: center;
   padding-top: 20rpx;
   height: 180rpx;
+}
 
+.right-massage.massage {
+  display: flex;
+  justify-content: space-around;
+  height: 150rpx;
 }
 
 .base-wages {
@@ -112,4 +120,19 @@
 .base-status[data-status='工作中'] {
   background: rgba(245, 245, 245);
   color: #706C7F;
+}
+
+.interview-status[data-status='尚未联系'],.interview-status[data-status='已邀请'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 40rpx;
+font-size: 28rpx;
+font-weight: 500;
+line-height: 40rpx;
+color: #FFAD47;
+}
+
+.interview-status[data-status='已邀请'] {
+  color: #5482FB;
 }

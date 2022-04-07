@@ -1,5 +1,5 @@
 @import'/pages/component/workerList/index.wxss';
-
+@import'/pages/component/bossList/index.wxss';
 .message-index {
   padding: 0 28rpx;
   background: rgba(247, 248, 254, 1);

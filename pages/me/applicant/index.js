@@ -38,6 +38,7 @@ Page({
         status:'工作中'
       }
     ],
+    isbossList:true
   },
 
   /**
