@@ -24,7 +24,9 @@
           <view wx:if="{{isTime}}" class="time">{{item.time}}</view>
         </view>
       </view>
-      <view wx:if="{{isSure}}" class="third-left"><view class="left-box">确认</view></view>
+      <view wx:if="{{isSure}}" class="third-left">
+        <view class="left-box">确认</view>
+      </view>
     </view>
   </view>
 </view>

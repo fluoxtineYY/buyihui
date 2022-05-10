@@ -5,29 +5,32 @@
       data-select="{{index}}" data-num="{{item.newNum>99?'99+':item.newNum}}" bindtap="changeHead"> {{item.name}}</view>
   </view>
 
-<!-- 工人 -->
+  <!-- 工人 -->
   <block wx:if="{{login_type==0}}">
+    <!-- 邀约 -->
     <block wx:if="{{headSelect[head_num].value==0}}">
       <include src="/pages/component/workerList/index.wxml"></include>
     </block>
-
+    <!-- 聊一聊 -->
     <block wx:elif="{{headSelect[head_num].value==1}}">
       <view>smg</view>
     </block>
-
+    <!-- 系统消息 -->
     <block wx:else>
-      <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}"
-        data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
-        <view class="message-type">
-          {{item.type}}
-          <view class="message-date">{{item.date}}</view>
+      <view class="message-box">
+        <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}"
+          data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
+          <view class="message-type">
+            {{item.type}}
+            <view class="message-date">{{item.date}}</view>
+          </view>
+          <view class="message-text">{{item.text}}</view>
         </view>
-        <view class="message-text">{{item.text}}</view>
       </view>
     </block>
   </block>
 
-<!-- 企业 -->
+  <!-- 企业 -->
   <block wx:elif="{{login_type==1}}">
     <block wx:if="{{headSelect[head_num].value==0}}">
       <include src="/pages/component/bossList/index.wxml"></include>
@@ -37,13 +40,15 @@
       <view>asd</view>
     </block>
     <block wx:else>
-      <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}"
-        data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
-        <view class="message-type">
-          {{item.type}}
-          <view class="message-date">{{item.date}}</view>
+      <view class="message-box">
+        <view class="message-body" wx:for="{{messageContent}}" wx:key="index" data-id="{{index}}"
+          data-num="{{item.num>99?'99+':item.num}}" bindtap="checkMoreMessage">
+          <view class="message-type">
+            {{item.type}}
+            <view class="message-date">{{item.date}}</view>
+          </view>
+          <view class="message-text">{{item.text}}</view>
         </view>
-        <view class="message-text">{{item.text}}</view>
       </view>
     </block>
   </block>

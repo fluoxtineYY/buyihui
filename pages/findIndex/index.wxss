@@ -1,4 +1,5 @@
 @import'/pages/component/workerList/index.wxss';
+@import'/pages/component/bossList/index.wxss';
 
 .find-index {
   position: relative;
@@ -88,7 +89,7 @@
 
 .content-head {
   position: relative;
-  margin-top: 16rpx;
+  margin: 16rpx 0;
   height: 40rpx;
   text-align: center;
   font-size: 28rpx;

@@ -84,6 +84,38 @@ Page({
       }],
       inviteTimes: '10',
       readTimes: '34'
+    },{
+      jobName: '平车',
+      jobFeature: '临工',
+      jobNumber: '3',
+      jobPrice: '2.5',
+      jobUnit: '件',
+      time: '1小时前',
+      personArr: [{
+        feature: "1-3年"
+      }, {
+        feature: "夫妻优先"
+      }, {
+        feature: "环境好"
+      }],
+      inviteTimes: '10',
+      readTimes: '34'
+    }, {
+      jobName: '车间打版',
+      jobFeature: '全职',
+      jobNumber: '1',
+      jobPrice: '3000',
+      jobUnit: '月',
+      time: '20分钟前',
+      personArr: [{
+        feature: "1-3年"
+      }, {
+        feature: "夫妻优先"
+      }, {
+        feature: "环境好"
+      }],
+      inviteTimes: '10',
+      readTimes: '34'
     }]
   },
 

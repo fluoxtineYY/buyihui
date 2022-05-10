@@ -123,6 +123,24 @@ Page({
         address:'海珠鹭江',
         wages:"15k-20k",
         status:'工作中'
+      },
+      {
+        imagePath: 'https://img0.baidu.com/it/u=2336455268,2218047305&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400',
+        name: '陈穗离',
+        sex: '男',
+        good: ["平车", "四线", "裁床", "尾部"],
+        address: '海珠鹭江',
+        wages: "10k-15k",
+        status: '工作中'
+      },
+      {
+        imagePath: 'https://img0.baidu.com/it/u=1140314362,462443938&fm=253&fmt=auto&app=138&f=JPEG?w=410&h=410',
+        name: '张雾里',
+        sex: '女',
+        good: ["平车", "四线", "裁床", "尾部"],
+        address: '海珠鹭江',
+        wages: "15k-20k",
+        status: '邀约'
       }
     ],
     login_type:Number,

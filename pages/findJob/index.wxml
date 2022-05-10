@@ -37,9 +37,4 @@
     <include src="/pages/component/bossList/index.wxml"></include>
   </block>
 
-  <view class="resume" bindtap="jumpCompany">
-    <text>企业</text>
-    <text>入驻</text>
-  </view>
-
 </view>

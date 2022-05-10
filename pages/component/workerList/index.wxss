@@ -1,5 +1,5 @@
 .content-body-box {
-  padding: 0 20rpx 20rpx;
+  padding: 0 28rpx 20rpx;
 }
 
 .content-body {
@@ -7,10 +7,12 @@
   flex-direction: column;
   margin-top: 12rpx;
   padding: 30rpx;
+  min-width: 694rpx;
   max-height: 316rpx;
   background: rgba(255, 255, 255, 0.39);
   box-shadow: 0px 0px 12px rgba(164, 164, 164, 0.16);
   border-radius: 20rpx;
+  box-sizing: border-box;
 }
 
 .content-body+.content-body {
