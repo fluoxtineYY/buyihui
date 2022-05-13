@@ -18,7 +18,7 @@ Page({
       value: 3
     }],
     selectNum:0,
-    person_content:[
+    applicant_content:[
       {
         imagePath:'https://img1.baidu.com/it/u=4229212883,631981417&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500',
         name:'陈建华',
@@ -36,9 +36,27 @@ Page({
         address:'海珠鹭江',
         wages:"15k-20k",
         status:'工作中'
+      },
+      {
+        imagePath: 'https://img0.baidu.com/it/u=2336455268,2218047305&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400',
+        name: '陈穗离',
+        sex: '男',
+        good: ["平车", "四线", "裁床", "尾部"],
+        address: '海珠鹭江',
+        wages: "10k-15k",
+        status: '邀约'
+      },
+      {
+        imagePath: 'https://img0.baidu.com/it/u=1140314362,462443938&fm=253&fmt=auto&app=138&f=JPEG?w=410&h=410',
+        name: '张雾里',
+        sex: '女',
+        good: ["平车", "四线", "裁床", "尾部"],
+        address: '海珠鹭江',
+        wages: "15k-20k",
+        status: '邀约'
       }
     ],
-    isbossList:true
+    isApplicantList:true,//组件
   },
 
   /**

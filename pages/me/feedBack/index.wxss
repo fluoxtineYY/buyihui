@@ -49,6 +49,11 @@
   border-radius: 8rpx;
 }
 
+.type-list.on {
+color: #5482FB;
+border: 2rpx solid #5482FB;
+}
+
 /* .type-list:nth-child(4n) {
 margin:0
 } */

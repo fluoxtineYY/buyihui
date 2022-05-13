@@ -120,6 +120,8 @@
   position: absolute;
   top: 440rpx;
   padding: 0 28rpx;
+  width: 100%;
+    box-sizing: border-box;
 }
 
 .content-body,

@@ -31,9 +31,11 @@
 
   <view class="base-message">
     <view class="base-left">手机号码
+      <image src="/pages/image/icon-isMust.png" mode="widthFix"></image>
     </view>
     <view class="picker-style">
-      <input placeholder="{{tagTips.phone}}" placeholder-class="input-style" value="{{formList.phone}}" />
+      <input type="number" placeholder="{{tagTips.phone}}" placeholder-class="input-style" value="{{formList.phone}}"
+        bindblur="phoneRule" />
     </view>
   </view>
 
@@ -43,7 +45,12 @@
     </view>
     <view class="picker-style">
       <input placeholder="{{tagTips.code}}" placeholder-class="input-style" value="{{formList.code}}" />
-      <view class="send-code">发送</view>
+      <block wx:if="{{count<60&& count!=0}}">
+        <view class="code-count" bindtap="sendCode">{{count}}</view>
+      </block>
+      <block wx:else>
+        <view class="send-code" bindtap="sendCode">发送</view>
+      </block>
     </view>
   </view>
 
@@ -92,7 +99,8 @@
     </view>
     <view class="picker-style">
       <picker bindchange="changeWages" value="{{formSelect.wagesNum}}" range="{{formSelect.wagesArray}}">
-        <view class="input-style">{{formSelect.wagesNum?formSelect.wagesArray[formSelect.wagesNum]:tagTips.wages}}</view>
+        <view class="input-style">{{formSelect.wagesNum?formSelect.wagesArray[formSelect.wagesNum]:tagTips.wages}}
+        </view>
       </picker>
       <image class="more-select" src="/pages/image/bar-back.png" mode="widthFix"></image>
     </view>
@@ -107,17 +115,15 @@
     </view>
   </view>
 
-
-
-
   <view class="select-work-type">
-    <view class="select-list" wx:for="{{workType}}" wx:key="index">
+    <view bindtap="getWrokType" class="select-list {{typeNum == index?'on':''}}" data-index="{{index}}"
+      wx:for="{{workType}}" wx:key="index">
       {{item}}
     </view>
   </view>
 
   <view class="sure-select">
-    <image src="/pages/image/icon-sureSelect.png" mode="widthFix"></image>
+    <image bindtap="clickSure" src="/pages/image/icon-{{isClickSure ? 'isSelect' :'sureSelect'}}.png" mode="widthFix"></image>
     <text>请勾选</text>
     《用户注册协议》
   </view>

@@ -22,6 +22,11 @@
   margin-top: 24rpx;
 }
 
+.applicant-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .left-img {
   display: flex;
   justify-content: flex-start;
@@ -29,9 +34,24 @@
   height: 200rpx;
 }
 
+
 .left-img image {
   margin-right: 30rpx;
   width: 96rpx;
+  border-radius: 48rpx;
+}
+
+.left-img.applicant {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 72rpx;
+}
+
+
+.left-img.applicant image {
+  margin-right: 30rpx;
+  width: 72rpx;
   border-radius: 48rpx;
 }
 
@@ -45,6 +65,13 @@
 
 .middle-message.message {
   padding-top: 40rpx;
+}
+
+.middle-message.applicant {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 70rpx;
 }
 
 .base-name {

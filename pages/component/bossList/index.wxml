@@ -22,6 +22,33 @@
       </view>
     </view>
   </block>
+
+  <block wx:if="{{isApplicantList}}">
+    <view class="base-body" wx:for="{{applicant_content}}" wx:key="index">
+      <view class="applicant-left">
+        <view class="middle-message applicant">
+          <view class="left-img applicant">
+            <image src="{{item.imagePath}}" mode="widthFix"></image>
+          </view>
+          <view class="base-name">
+            {{item.name}}
+            <image src="/pages/image/icon-{{item.sex=='男'?'boy':'girl'}}.png" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="good-box">
+            <view class="job-good" wx:for="{{item.good}}" wx:key="index">{{item}}</view>
+          </view>
+          <view class="job-address">{{item.address}}</view>
+      </view>
+      <view class="right-message">
+        <view class="base-wages">
+          {{item.wages}}
+        </view>
+        <view class="base-status" data-status="{{item.status}}">{{item.status}}</view>
+      </view>
+    </view>
+  </block>
+
   <block wx:else>
     <view class="base-body message" wx:for="{{interview_content}}" wx:key="index">
       <view class="left-img">

@@ -6,5 +6,7 @@
       wx:for="{{workerSelect}}" wx:key="index">
       {{item.name}}</view>
   </view>
-  <include src="/pages/component/bossList/index.wxml"></include>
+  <block wx:if="{{login_type!=0}}">
+    <include src="/pages/component/bossList/index.wxml"></include>
+  </block>
 </view>

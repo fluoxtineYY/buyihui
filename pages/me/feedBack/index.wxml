@@ -2,28 +2,32 @@
 <view class="feedback-index">
   <view class="feed-type">
     <view class="title">反馈分类</view>
-   <view class="type-box"> <view class="type-list" wx:for="{{typeList}}" wx:key="index">{{item.type}}</view></view>
+    <view class="type-box">
+      <view class="type-list {{item.isClick ? 'on' : ''}}" wx:for="{{typeList}}" wx:key="index" bindtap="selectType"
+        data-index="{{index}}">{{item.type}}</view>
+    </view>
   </view>
 
   <view class="feed-type">
     <view class="title">问题和建议</view>
     <view class="input-type">
-    <input placeholder="请填写您的意见和建议" placeholder-style="input-style" value="" />
-  </view>
+      <input placeholder="请填写您的意见和建议" placeholder-style="input-style" value="{{feedPramas.feedMessage}}"
+        bindblur="writeRecommend" />
+    </view>
   </view>
 
   <view class="feed-type phone">
     <view class="title">联系方式</view>
     <view class="input-type">
-    <input placeholder="请留下您的联系方式" placeholder-style="input-style" value="" />
+      <input placeholder="请留下您的联系方式" placeholder-style="input-style" value="{{feedPramas.feedContact}}" bindblur="writeContact" />
     </view>
   </view>
 
 </view>
 
 <view class="footer">
-  <navigator open-type="navigateBack" delta='1' >
-  <view class="click-back">点击返回</view>
+  <navigator open-type="navigateBack" delta='1'>
+    <view class="click-back">点击返回</view>
   </navigator>
-  <view class="sumit">提交意见</view>
-  </view>
+  <view class="sumit" bindtap="sumitRecommend">提交意见</view>
+</view>

@@ -1,8 +1,10 @@
 @import'/pages/component/workerList/index.wxss';
 @import'/pages/component/bossList/index.wxss';
+page {
+  height: 100vh;
+}
 .message-index {
   width: 100%;
-  height: 100vh;
   background: rgba(247, 248, 254, 1);
   box-sizing: border-box;
 }
@@ -15,6 +17,7 @@
 }
 
 .head-message {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,7 +29,6 @@
 }
 
 .head-message.on {
-  position: relative;
   color: #5482FB;
 }
 
@@ -74,7 +76,8 @@
   align-items: center;
   content: attr(data-num);
   top: -20rpx;
-  right: 0;
+  right: -20rpx;
+  /* transform: translate(-50%,-50%); */
   min-width: 40rpx;
   height: 40rpx;
   font-size: 32rpx;
@@ -83,11 +86,20 @@
   border-radius: 20px;
 }
 
-.head-message::before {
+.message-body::after{
+  right: -10rpx;
+}
+
+/* .head-message:last-child::before {
+  right: -50%;
+} */
+
+/* .head-message::before {
+  position: absolute;
   top: 0;
   right: -50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%,-50%);
+} */
 
 .message-body[data-num='99+']::after,
 .head-message[data-num='99+']::before {

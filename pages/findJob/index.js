@@ -179,10 +179,4 @@ Page({
   onShow: function () {
 
   },
-
-  jumpCompany(){
-    wx.navigateTo({
-      url: '/pages/findJob/companyEnter/index',
-    })
-  }
 })

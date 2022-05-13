@@ -175,11 +175,15 @@ Page({
 
   },
 
-
-
   jumpResume() {
     wx.navigateTo({
       url: '/pages/findIndex/resume/index',
+    })
+  },
+
+  jumpCompany(){
+    wx.navigateTo({
+      url: '/pages/findJob/companyEnter/index',
     })
   }
 })

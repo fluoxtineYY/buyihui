@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/message/index",
-          "pathName": "pages/message/index",
+          "name": "pages/me/feedBack/index",
+          "pathName": "pages/me/feedBack/index",
           "query": "",
           "scene": null
         }

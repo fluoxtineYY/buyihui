@@ -47,7 +47,7 @@ Page({
         type: "系统通知",
         date: "6月20日",
         text: "疫情紧张，平台祝愿您做好防护工作",
-        num: 0,
+        num: 4,
       },
       {
         type: "系统通知",
@@ -144,6 +144,42 @@ Page({
       }],
     }],
     interview_content: [{
+        imagePath: 'https://img1.baidu.com/it/u=4229212883,631981417&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500',
+        name: '陈建华',
+        sex: '男',
+        good: ["平车", "四线", "裁床", "尾部"],
+        status: '尚未联系',
+        time: '1小时前'
+      },
+      {
+        imagePath: 'https://img1.baidu.com/it/u=3678285880,705067650&fm=253&fmt=auto&app=138&f=JPEG?w=360&h=360',
+        name: '梁衣',
+        sex: '女',
+        good: ["平车", "四线", "裁床", "尾部"],
+        address: '海珠鹭江',
+        wages: "15k-20k",
+        status: '已邀请',
+        time: '1小时前'
+      },
+      {
+        imagePath: 'https://img0.baidu.com/it/u=2336455268,2218047305&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400',
+        name: '陈穗离',
+        sex: '男',
+        good: ["平车", "四线", "裁床", "尾部"],
+        address: '海珠鹭江',
+        wages: "15k-20k",
+        status: '已邀请',
+        time: '1小时前'
+      },
+      {
+        imagePath: 'https://img0.baidu.com/it/u=1140314362,462443938&fm=253&fmt=auto&app=138&f=JPEG?w=410&h=410',
+        name: '张雾里',
+        sex: '女',
+        good: ["平车", "四线", "裁床", "尾部"],
+        status: '尚未联系',
+        time: '1小时前'
+      },
+      {
         imagePath: 'https://img1.baidu.com/it/u=4229212883,631981417&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500',
         name: '陈建华',
         sex: '男',
